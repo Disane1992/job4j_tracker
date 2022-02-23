@@ -3,12 +3,8 @@ package ru.job4j.inheritance;
 public class Doctor extends Profession {
     private String clinic;
 
-    public Doctor() {
-
-    }
-
-    public Doctor(String clinic) {
-        super("Иван", "Иванов", "Врачебное", "01.01.2020");
+    public Doctor(String name, String surname, String education, String birthday, String clinic) {
+        super(name, surname, education, birthday);
         this.clinic = clinic;
     }
 
